@@ -7,7 +7,7 @@ on:
     paths:
       - readmeforsqlupdate.md
 env:
-  AZURE_SQL_SERVERNAME: vijaysqlholactions.database.windows.net 
+  AZURE_SQL_SERVERNAME: manojsqlholactions.database.windows.net 
 
 jobs:
   sqldbupdate:
@@ -17,13 +17,13 @@ jobs:
     - uses: actions/checkout@v1
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.ACTIONSDEPLOY }}
+        creds: ${{ secrets.AZURE_CRENDENTIAL }}
 
      
     - uses: azure/sql-action@v1
       with:
        server-name: ${{ env.AZURE_SQL_SERVERNAME }}
-       connection-string: ${{ secrets.SQLCONNECTIONSTRING }}
+       connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
        dacpac-package: './vijaysqldatabase.dacpac'
 
     # Azure logout 
