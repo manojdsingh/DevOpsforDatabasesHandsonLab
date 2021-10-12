@@ -3,27 +3,27 @@
 ## *Github Actions Labs*
 
 ### Lab 1 : Azure SQL Database and update database as code
-[BranchLink : AzureSQLDatabase](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/AzureSQLDatabase)
+[BranchLink : AzureSQLDatabase](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/AzureSQLDatabase)
 
 ### Lab 2 : Azure MYSQL Database and update database as code
-[BranchLink : AzureMYSQL](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/AzureMYSQLDatabase)
+[BranchLink : AzureMYSQL](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/AzureMYSQLDatabase)
 
 ### Lab 3 : Azure Postgres Database and update database as code
-[BranchLink : AzurePostgresDatabase](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/AzurePostgresDatabase)
+[BranchLink : AzurePostgresDatabase](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/AzurePostgresDatabase)
 
 ### Lab 4  : Create Online Polls using Django App and PostgreSQL DB
-[BranchLink : Django App and PostgreSQL DB](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/DjangoPostgresdb)
+[BranchLink : Django App and PostgreSQL DB](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/DjangoPostgresdb)
 
 ### Lab 5 : Create Webapp for Car Rental Vendor using Java and MySQL
-[BranchLink : Java and MySQL DB ](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/JavaMySQLdb)
+[BranchLink : Java and MySQL DB ](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/JavaMySQLdb)
 
 ## *Azure DevOps Pipeline Labs*
 
 ### Lab 6 :Create Polls using Django App and PostgresQLDB
-[BranchLink : Polls App](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/AzureDevOps-DjangoPostgredb)
+[BranchLink : Polls App](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/AzureDevOps-DjangoPostgredb)
 
 ### Lab 7 :Create Car Rental Wesbite using Java and MySQLDB
-[BranchLink : CarRental](https://github.com/jethanivijay/DevOpsforDatabasesHandsonLab/tree/AzureDevOps-JavaMySQL)
+[BranchLink : CarRental](https://github.com/manojdsingh/DevOpsforDatabasesHandsonLab/tree/AzureDevOps-JavaMySQL)
 
 ##  Instructions to Get Started on this Labs
 
