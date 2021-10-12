@@ -8,10 +8,10 @@ on:
       - readmeservicecreate.md
 
 env:
-  AZURE_RESOURCE_GROUP: vijaysqlholactions               # set this to your Azure Resource group's name  
+  AZURE_RESOURCE_GROUP: manojsqlholactions               # set this to your Azure Resource group's name  
   AZURE_LOCATION: eastus                         # set this to your azure resource group location   
-  AZURE_SQL_SERVERNAME: vijaysqlholactions         # set SQL Server  
-  AZURE_SQL_DATABASE: vijaysqlholactions    # set sqladmin user
+  AZURE_SQL_SERVERNAME: manojsqlholactions         # set SQL Server  
+  AZURE_SQL_DATABASE: manojsqlholactions    # set sqladmin user
   AZURE_SQLFIREWALL_IP: 0.0.0.0    # set this to all Azure IPs
   
 
@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.ACTIONSDEPLOY }}
+        creds: ${{ secrets.AZURE_CRENDENTIALS }}
 
 # Provision a Azure sQL Database on Azure
     - name: Azure SQL Database creation
@@ -31,7 +31,7 @@ jobs:
         azcliversion: latest
         inlineScript: |
           az group create --name ${{ env.AZURE_RESOURCE_GROUP }} --location ${{ env.AZURE_LOCATION }}
-          az sql server create --name ${{ env.AZURE_SQL_SERVERNAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }} --location ${{ env.AZURE_LOCATION }} --admin-user ${{ secrets.SQLADMINUSER }}  --admin-password ${{ secrets.SQLADMINPASS }}
+          az sql server create --name ${{ env.AZURE_SQL_SERVERNAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }} --location ${{ env.AZURE_LOCATION }} --admin-user ${{ secrets.SQL_ADMIN_USER }}  --admin-password ${{ secrets.SQL_ADMIN_PASS }}
           az sql server firewall-rule create --resource-group ${{ env.AZURE_RESOURCE_GROUP }} --server ${{ env.AZURE_SQL_SERVERNAME }} -n AllowYourIp --start-ip-address ${{ env.AZURE_SQLFIREWALL_IP }} --end-ip-address ${{ env.AZURE_SQLFIREWALL_IP }}
           az sql db create -g ${{ env.AZURE_RESOURCE_GROUP }} -s ${{ env.AZURE_SQL_SERVERNAME }} -n ${{ env.AZURE_SQL_DATABASE }} --service-objective S0
 
